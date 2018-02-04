@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1516410283 source:c:\users\abhinav keshri\documents\defining classes in separate\main.cpp
+	<iostream>
+	"Person.h"
+
+1516410105 c:\users\abhinav keshri\documents\defining classes in separate\person.h
+
+1516410281 source:c:\users\abhinav keshri\documents\defining classes in separate\person.cpp
+	"Person.h"
+	<iostream>
+
