@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nesting grids</title>
+	<style type="text/css">
+		#content{
+			text-align: center;
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			/*align-items: start;*/
+			/*justify-items:end;*/ 
+
+		}
+		#content div{
+			padding: 30px;
+			background-color: yellow;
+		}
+		#content div:nth-child(even)
+		{
+
+			background-color:black;
+		}
+		.nested{
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-gap: 10px;
+			grid-column: span 2;
+			justify-self:end;//
+			align-self: end;//center
+
+
+		}
+		.nested p{
+			border: 1px solid blue;
+			padding:10px;
+			margin: 0;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div>Two</div>
+		<div>Two</div>
+		<div>Two</div>
+		<div class="nested">
+			<p>1</p>
+			<p>2</p>
+			
+			
+		</div>
+		<div>Two</div>
+		<div>Three</div>
+		<div>Four</div>
+		<div>Five</div>
+		<div>Six</div>
+		<div>Seven</div>
+		<div>Four</div>
+		<div>Five</div>
+		<div>Six</div>
+		<div>Seven</div>
+		<div>Seven</div>
+	</div>
+
+</body>
+</html>

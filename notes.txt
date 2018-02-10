@@ -1,1 +1,16 @@
-<!--index.html is firstly executed 
+index.html is firstly executed
+lang attributes specifies the language of the element's content
+div tags divides your html code into chunks whare you wants 
+there is a parent child hirarchy is there in html. 
+Background Engine diffrentiate diffrent Browsers.
+Engine renders html code
+Ecma script was there initially before javascript
+ther is two types of sourceing 1.Absolute 2.Relative
+Meta tag - does not display.
+			google crollers does not read all the content of a page
+			It tells the browser about the page
+			You can define that zoom will be there or not.
+
+id is diffrent from class
+what is rel attribute works for
+content delivery 
