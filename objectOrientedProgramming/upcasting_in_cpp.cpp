@@ -23,7 +23,7 @@ int main()
     cout << pa->data_a<< endl;
     cout << pb->data_a<< " " << pb->data_b << endl;
 
-    pa = &b;///you actually have less information and you are trying to get more information.
+    pa = &b;///you actually have less information and you are trying to get more information.s
     cout << pa->data_a << " ";
     ///cout << pa->data_b << endl;/// this line produces an error.
     /* Data loss occurred */

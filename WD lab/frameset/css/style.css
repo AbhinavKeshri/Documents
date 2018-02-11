@@ -1,0 +1,64 @@
+body{
+	
+	font-family: Verdana;
+}
+h4
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+fieldset
+{
+	border-style: solid;
+}
+form{
+	/*letter-spacing: 0.1em;*/
+	font-size: 18px;
+}
+legend{
+	color:red;
+	padding: 20px;
+}
+#container
+{
+	align-self: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+p
+{
+	margin:0;
+}
+
+/*input[type="radio"]
+{
+	opacity: 0;
+	width: 0;
+	margin:0;
+}*/
+/*label[for="male"], label[for="female"]
+{
+	
+	display:inline-block;
+	padding-left:26px;
+	background: url(image/checks.png) no-repeat;
+	background-position: 0 -32px;
+	line-height: 24px;
+	cursor: pointer;
+
+}
+
+input:checked + label[for="male"],
+input:checked + label[for="female"]
+{
+	background-position: 0 0;
+	color:#ce1010;
+}*/
+input[type="name"]
+{
+	margin-right:10px;
+	margin-bottom: 10px;
+	width: 100%;
+	
+}

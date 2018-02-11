@@ -1,0 +1,17 @@
+body{
+	
+	text-align: center;
+	
+	font-family: verdana;
+}
+#container
+{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-auto-rows: minmax(200px,auto);
+}
+
+#container
+{
+	background: #3bbced;
+}

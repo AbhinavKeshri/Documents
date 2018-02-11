@@ -20,7 +20,7 @@ public:
 using namespace std;
 void print( char * p)
 {
-    cout << p << endl;
+    cout << p  << endl;
 }
 int main()
 {
