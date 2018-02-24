@@ -3,6 +3,24 @@
 <head>
 	<title>Get Admission</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function check_info()
+		{
+			var username = document.getElementById('username').value;
+			var	password = document.getElementById('password').value;
+
+			if(username=="" || password=="")
+			{
+				alert('please fill in all fields');
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+	</script>
 </head>
 <body>
 	<div id="container">
@@ -63,7 +81,15 @@
 		<fieldset>
 			<legend>Course Details</legend>
 		</fieldset>
-		
+
+		<fieldset>
+			<legend>Username & Password</legend>
+			<form  onsubmit="return check_info();"><!--instead of get use post-->
+				username:<input type="text" name="username" id="username"/>
+				password:<input type="password" name="password" id="password"/>
+				<input type="submit" value="login"/>
+			</form>
+		</fieldset>
 		
 	</form>
 		</div><!--Container-->

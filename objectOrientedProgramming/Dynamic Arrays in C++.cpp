@@ -11,7 +11,7 @@ struct Vertex
 {
     float x, y , z;
 };
-std::ostream& operator<<(  Vertex& vertex)
+std::ostream& operator<<(std::ostream& stream,  Vertex& vertex)
 {
     stream << vertex.x << " , " << vertex.y << " , " << vertex.z;
     return stream;

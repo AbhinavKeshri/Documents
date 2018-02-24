@@ -22,6 +22,6 @@ int main()
     entity::y = 8;
     e.Print();
     e1.Print();
-    entity::Print();
+    entity::Print();///static members can access static variable.
 
 }
