@@ -11,21 +11,23 @@
 		#content{
 
 			display: grid;
-			grid-template-columns: repeat(12,1fr);
+			grid-template-columns: repeat(12,1fr);/*property*/
 			grid-auto-rows: minmax(100px,auto);/*putting grid-auto-rows:minmax(100,auto); otherwise grid-row will not work as expected */
 			grid-gap:3px;
 			width:1200px;
 			margin: 0 auto;
 			position: relative;
-			
+			transition: fadein;
+			scale:0.7;
 		}
 		#content >*{
 			background: #3bbced;
 			padding: 30px;
-
+			/*Direct decendent of this id content are going to thave these properties.*/
 		}
 		header{
 			grid-column: 1/13;
+			/*grid-area: header;*/
 		}
 		main{
 			grid-column: 4/13;

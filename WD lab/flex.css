@@ -1,0 +1,40 @@
+body{
+	background-color: #4a4d4a;
+	
+}
+
+#wraper
+{
+	margin: 0 auto;
+	max-width: 1000px;
+	background: white;
+}
+
+.dumb
+{
+	display: flex;
+}
+
+.box
+{
+	min-height: 100px;
+	width: 100px;
+}
+
+.one
+{
+	background: red;
+	flex-grow: 1;
+}
+
+.two
+{
+	background: green;
+	flex-grow: 2;
+}
+
+.three
+{
+	background: blue;
+	flex-grow: 3;
+}

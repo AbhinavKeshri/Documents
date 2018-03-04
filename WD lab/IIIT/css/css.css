@@ -1,17 +1,74 @@
-body{
+#content{
+	display:grid;
+	grid-template-columns:repeat(12,1fr);/*repeat function*/
+	/*Setting row height*/
+	grid-gap:3px;
 	
-	text-align: center;
+/*	grid-column-gap: 2px;*/
+	align-items: stretch;/*start end*/
+	justify-items:center; 
 	
-	font-family: verdana;
 }
-#container
-{
-	display: grid;
-	grid-template-columns: repeat(12,1fr);
-	grid-auto-rows: minmax(200px,auto);
+#content >*{
+	border: solid black 3px;
+}
+aside{
+	background-color:aqua;
+	grid-column: 1/4;
+	grid-row:2/3;
+}
+footer{
+	background-color: #333;
+	grid-column: 1/13;
+	text-color:white;
+/*	justify-self:center;*/
+/*	align-self:center;*/
+}
+main{
+	background-color:cyan;
+	grid-column:4/13;
+	grid-row:2/4;
+}
+}
+section{
+	background-color:yellow;
+	grid-column:1/4;
+	grid-row:3/4;
 }
 
-#container
-{
-	background: #3bbced;
+header{
+	grid-column: 1/13;
+	grid-row: 1/2;
+	margin: 0px;
+	padding: 0px;
+/*	grid-column-start: 1;*/
+}
+body{
+	font-family: verdana;
+}
+.navigation{
+	background-color:black;
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+}
+.navigation ul{
+	list-style: none;
+}
+.navigation li{
+	color: white;
+	display: inline;
+	border-left: solid;
+	border-right: solid;
+	font-size: 17px;
+}
+.navigation a{
+	text-decoration: none;
+	color: white;
+	margin:30px;
+}
+header h1{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
 }

@@ -4,28 +4,12 @@
 	<title>Get Admission</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
-	<script type="text/javascript">
-		function check_info()
-		{
-			var username = document.getElementById('username').value;
-			var	password = document.getElementById('password').value;
-
-			if(username=="" || password=="")
-			{
-				alert('please fill in all fields');
-				return false;
-			}
-			else
-			{
-				return true;
-			}
-		}
-	</script>
+	
 </head>
 <body>
 	<div id="container">
 	<h4>Admission Form</h4>
-	<form>
+	<form id="admfrm" name="myform">
 		<fieldset>
 			<legend>Personal Information</legend>
 			<label for="fullname">Name :</label>
@@ -66,7 +50,13 @@
 			<input type="name" id="Address" name="Pin" placeholder="Local">
 			<br>
 			<label for="Nationality">Nation :</label>
-			<input type="name" id="Address" name="Nationality" placeholder="Local">
+			<select type="name" id="Address" name="Nationality" placeholder="Local">
+				<option>India</option>
+				<option>Pakistan</option>
+				<option>Afghanistan</option>
+				<option>United States</option>
+				<option>Peoples republic of china </option>
+			</select>
 			<br>
 			<label for="Email">Email :</label>
 			<input type="name" id="Email" name="Nationality" placeholder="Local">
@@ -87,11 +77,29 @@
 			<form  onsubmit="return check_info();"><!--instead of get use post-->
 				username:<input type="text" name="username" id="username"/>
 				password:<input type="password" name="password" id="password"/>
-				<input type="submit" value="login"/>
+				
 			</form>
 		</fieldset>
-		
+		<input type="submit" name = "submit" value="submit">
 	</form>
+	<div id="message" style="color:red;" ></div>
 		</div><!--Container-->
+	<script type="text/javascript">
+		var myform = document.forms.myform;
+		myform.username.onfocus = function(){
+		myform.username.style.border="solid red 10px"};
+		myform.onsubmit = function()
+		{
+			if(myform.username.value == ""){
+			alert("username");
+			return false;
+			}
+			else{
+			//message.innerHTML = "";
+			alert("submitted");
+			return true;
+			}
+		};
+	</script>
 </body>
 </html>

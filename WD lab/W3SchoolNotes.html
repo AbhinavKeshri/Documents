@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3 School Notes</title>
+	<style type="text/css">
+		.services h4, .services p{
+			text-align: center;
+			color: #999;
+		}
+
+		.services{
+			float:left;
+			background: #eee;
+			width: 29%;
+			margin:1%;
+			padding: 1%;
+		}
+
+	</style>
+</head>
+<body>
+	<h3>Type attribute</h3>
+	<p id="demo">For Input Elements,the type attribute specifies the type of \<input\> element to display.</p>
+	<h3>Display Time</h3>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Date</button>
+
+		<form action="/action_page.php" method="get">
+		First name: <input type="text" name="fname"><br>
+		Last name: <input type="text" name="lname"><br>
+		<button type="submit" value="Submit">Submit</button>
+		<button type="reset" value="Reset">Reset</button>
+		</form>
+
+		<div class="services">
+			<h4>Service 1</h4>
+			<p>Described the Service a little bit.</p>
+		</div>
+		<div class="services">
+			<h4>Service 2</h4>
+			<p>Described the Service a little bit.</p>
+		</div>
+		<div class="services">
+			<h4>Service 3</h4>
+			<p>Described the Service a little bit.</p>
+		</div>
+
+
+	<script type="text/javascript">
+		var showDateAt = getElementById('demo');
+		console.log(showDateAt);
+
+		var showDate = function(showDateAt){
+
+		}
+	</script>
+</body>
+</html>
+<!-- 
+	type-> For Input Elements, the type Attribute 
+ -->
